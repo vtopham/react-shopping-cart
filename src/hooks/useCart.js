@@ -8,5 +8,6 @@ export const useCart = initialValue => {
     const handleChanges = updatedValue => {
         setValue(updatedValue)
     };
+    console.log("use cart is accessed")
     return [value, handleChanges]
 }
