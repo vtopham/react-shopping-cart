@@ -33,11 +33,13 @@ function App() {
 				<Route exact path="/">
 					<Products />
 				</Route>
-
+			</ProductContext.Provider>
+			<CartContext.Provider value = {cart}>
 				<Route path="/cart">
 					<ShoppingCart/>
 				</Route>
-			</ProductContext.Provider>
+			</CartContext.Provider>
+			
 		</div>
 	);
 }
