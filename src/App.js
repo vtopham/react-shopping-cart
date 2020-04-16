@@ -1,4 +1,5 @@
 import React, { useState, createContext } from 'react';
+import { useCart } from './hooks/useCart'
 import { Route } from 'react-router-dom';
 import data from './data';
 
@@ -13,6 +14,7 @@ import CartContext from './contexts/CartContext'
 function App() {
 	const [products] = useState(data);
 	const [cart, setCart] = useState([]);
+	
 
 	const addItem = item => {
 		// add the given item to the cart
